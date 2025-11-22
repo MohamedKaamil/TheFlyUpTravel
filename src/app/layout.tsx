@@ -20,6 +20,10 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: 'Fly Up Travel Agency',
   description: 'Experience the wonder of Sri Lanka with expert local guides.',
+  // Added favicon configuration here
+  icons: {
+    icon: '/icons/favicon32.png',
+  },
 };
 
 export default function RootLayout({

@@ -1,18 +1,24 @@
 'use client';
 
 import React, { useState } from 'react';
-// Import only the icons used on the PAGE itself
-import { Clock, ArrowRight, Sparkles, Check } from 'lucide-react';
+import { Clock, ArrowRight, Sparkles, Check, ChevronDown } from 'lucide-react';
 
 // Import data and types
 import { Package, allPackages, categories } from './data';
 
-// Import the newly separated modal component
+// Import the modal component
 import PackageModal from './PackageModal';
 
 export default function PackagesPage() {
   const [selectedPackage, setSelectedPackage] = useState<Package | null>(null);
   const [activeCategory, setActiveCategory] = useState("All Packages");
+  
+  // State specifically for the Mobile Dropdown
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  // Helpers for the Mobile Dropdown display
+  const currentCategory = categories.find(c => c.name === activeCategory) || categories[0];
+  const CurrentIcon = currentCategory.icon;
 
   const filteredPackages = activeCategory === "All Packages"
     ? allPackages
@@ -32,13 +38,6 @@ export default function PackagesPage() {
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-900/40 via-transparent to-amber-900/40"></div>
         </div>
         
-        {/* Floating Particles */}
-        <div className="absolute inset-0 opacity-30">
-          <div className="absolute top-20 left-1/4 w-2 h-2 bg-amber-400 rounded-full animate-float-slow"></div>
-          <div className="absolute top-40 right-1/3 w-3 h-3 bg-emerald-400 rounded-full animate-float-delayed"></div>
-          <div className="absolute bottom-32 left-1/3 w-2 h-2 bg-amber-300 rounded-full animate-float"></div>
-        </div>
-
         <div className="relative z-10 p-4 animate-fade-in-up">
           <div className="inline-flex items-center gap-2 bg-amber-400/20 backdrop-blur-sm px-4 py-2 rounded-full mb-6 border border-amber-400/30">
             <Sparkles className="w-4 h-4 text-amber-400" />
@@ -55,16 +54,83 @@ export default function PackagesPage() {
         </div>
       </section>
       
-      {/* Category Filter */}
-      <section className="relative py-12 bg-gradient-to-r from-emerald-100 via-green-100 to-white overflow-hidden">
+      {/* Category Filter Section */}
+      <section className="relative py-12 bg-gradient-to-r from-emerald-100 via-green-100 to-white overflow-visible z-30">
         {/* Decorative Background */}
-        <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
           <div className="absolute top-10 left-10 w-64 h-64 bg-emerald-300 rounded-full blur-3xl animate-float"></div>
           <div className="absolute bottom-10 right-10 w-64 h-64 bg-amber-300 rounded-full blur-3xl animate-float-delayed"></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="flex flex-wrap justify-center gap-4">
+          
+          {/* ========================================== */}
+          {/* MOBILE VIEW: Dropdown Menu (< 768px)       */}
+          {/* ========================================== */}
+          <div className="md:hidden flex justify-center">
+            <div className="relative w-full max-w-xs">
+              <button
+                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                className="w-full bg-white border-2 border-stone-100 text-stone-800 shadow-xl rounded-2xl px-5 py-4 flex items-center justify-between transition-all duration-300 hover:border-emerald-200 group"
+              >
+                <div className="flex items-center gap-3">
+                  <div 
+                    className="w-10 h-10 rounded-xl flex items-center justify-center transition-transform duration-300 group-hover:scale-110 shadow-sm"
+                    style={{ backgroundColor: currentCategory.color }}
+                  >
+                    <CurrentIcon className="w-5 h-5 text-white" />
+                  </div>
+                  <span className="font-sans font-bold text-lg">{currentCategory.name}</span>
+                </div>
+                <ChevronDown className={`w-5 h-5 text-stone-400 transition-transform duration-300 ${isDropdownOpen ? 'rotate-180' : ''}`} />
+              </button>
+
+              {isDropdownOpen && (
+                <div className="absolute top-full left-0 right-0 mt-3 bg-white rounded-2xl shadow-2xl border border-stone-100 overflow-hidden animate-fade-in-up z-50">
+                  <div className="p-2 flex flex-col gap-1 max-h-[300px] overflow-y-auto">
+                    {categories.map((cat) => {
+                      const Icon = cat.icon;
+                      const isActive = activeCategory === cat.name;
+                      return (
+                        <button
+                          key={cat.name}
+                          onClick={() => {
+                            setActiveCategory(cat.name);
+                            setIsDropdownOpen(false);
+                          }}
+                          className={`flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 text-left w-full ${
+                            isActive 
+                              ? 'bg-stone-50 text-stone-900' 
+                              : 'hover:bg-stone-50 text-stone-600 hover:text-stone-900'
+                          }`}
+                        >
+                          <div 
+                            className={`w-8 h-8 rounded-lg flex items-center justify-center transition-colors ${
+                              isActive ? 'opacity-100' : 'opacity-70'
+                            }`}
+                            style={{ backgroundColor: isActive ? cat.color : '#f5f5f4' }}
+                          >
+                            <Icon className={`w-4 h-4 ${isActive ? 'text-white' : 'text-stone-500'}`} />
+                          </div>
+                          <span className={`font-semibold text-sm ${isActive ? 'font-bold' : ''}`}>
+                            {cat.name}
+                          </span>
+                          {isActive && (
+                            <div className="ml-auto w-2 h-2 rounded-full" style={{ backgroundColor: cat.color }}></div>
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* ========================================== */}
+          {/* DESKTOP VIEW: Horizontal Buttons (>= 768px) */}
+          {/* ========================================== */}
+          <div className="hidden md:flex flex-wrap justify-center gap-4">
             {categories.map((cat, index) => {
               const Icon = cat.icon;
               const isActive = activeCategory === cat.name;
@@ -94,11 +160,12 @@ export default function PackagesPage() {
               );
             })}
           </div>
+
         </div>
       </section>
 
       {/* Packages Grid */}
-      <section className="py-24 bg-white bg-gradient-to-r from-white via-green-100 to-emerald-100">
+      <section className="py-24 bg-white bg-gradient-to-r from-white via-green-100 to-emerald-100 relative z-10">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in-up">
             <h2 className="font-serif text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-800 via-teal-700 to-emerald-900 bg-clip-text text-transparent mb-4">
@@ -186,7 +253,6 @@ export default function PackagesPage() {
 
       {/* Final CTA */}
       <section className="relative py-24 bg-gradient-to-r from-emerald-100 via-green-100 to-white overflow-hidden">
-        {/* Decorative Elements */}
         <div className="absolute inset-0 opacity-20">
           <div className="absolute top-20 left-20 w-96 h-96 bg-amber-300 rounded-full blur-3xl animate-float"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-emerald-300 rounded-full blur-3xl animate-float-delayed"></div>
@@ -211,10 +277,7 @@ export default function PackagesPage() {
         </div>
       </section>
 
-      {/* This is now much cleaner! 
-        We just conditionally render the PackageModal component
-        and pass it the pkg data and the onClose handler.
-      */}
+      {/* Package Modal */}
       {selectedPackage && (
         <PackageModal 
           pkg={selectedPackage} 
@@ -222,7 +285,7 @@ export default function PackagesPage() {
         />
       )}
 
-      {/* All animations are defined here in the main page's style block */}
+      {/* Animations */}
       <style jsx>{`
         @keyframes fade-in-up {
           from { opacity: 0; transform: translateY(30px); }
