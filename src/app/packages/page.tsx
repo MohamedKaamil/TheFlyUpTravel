@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Clock, ArrowRight, Sparkles, Check, ChevronDown } from 'lucide-react';
 
-// Import data and types
+// Import data and types gdfdfdfd
 import { Package, allPackages, categories } from './data';
 
 // Import the modal component
