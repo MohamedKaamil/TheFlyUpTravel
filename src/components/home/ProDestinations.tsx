@@ -6,7 +6,7 @@ const destinations = [
   {
     name: 'Sigiriya',
     desc: 'The Lion Rock Fortress',
-    img: '/images/tom-nicholson-PTw2xsseQxM-unsplash.jpg',
+    img: '/images/tom-nicholson-PTw2xsseQxM-unsplash.webp',
     span: 'col-span-1 md:col-span-2',
     color: 'from-orange-500 to-red-500',
     badge: 'UNESCO Heritage',
@@ -22,7 +22,7 @@ const destinations = [
   {
     name: 'Ella',
     desc: 'Misty Mountains & Tea',
-    img: '/images/ella.jpg',
+    img: '/images/ella.webp',
     span: 'col-span-1',
     color: 'from-teal-500 to-cyan-500',
     badge: 'Mountain Views',
@@ -30,7 +30,7 @@ const destinations = [
   {
     name: 'Galle',
     desc: 'Colonial Forts & Coast',
-    img: '/images/Galle-Fort.jpg',
+    img: '/images/Galle-Fort.webp',
     span: 'col-span-1 md:col-span-2',
     color: 'from-blue-500 to-indigo-500',
     badge: 'Historic Port',

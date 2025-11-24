@@ -74,7 +74,7 @@ export default function ContactPage() {
       <section className="relative h-[60vh] lg:h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="images/contact-us.jpg"
+            src="images/contact-us.webp"
             alt="A beautiful, serene Sri Lankan landscape"
             className="w-full h-full object-cover animate-slow-zoom"
           />
@@ -316,13 +316,13 @@ export default function ContactPage() {
                   Direct Contact
                 </h3>
                 <div className="space-y-5 relative z-10">
-                  <a href="tel:+94764301479" className="flex items-start gap-4 p-3 sm:p-4 rounded-xl hover:bg-white/10 transition-all duration-300 group">
+                  <a href="tel:+94772965729" className="flex items-start gap-4 p-3 sm:p-4 rounded-xl hover:bg-white/10 transition-all duration-300 group">
                     <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-amber-400 to-orange-400 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300">
                       <Phone className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                     </div>
                     <div className="min-w-0">
                       <h4 className="font-sans font-semibold mb-1 text-sm sm:text-base">Phone / WhatsApp</h4>
-                      <p className="font-sans text-emerald-100 text-xs sm:text-sm truncate">+94 76 430 1479</p>
+                      <p className="font-sans text-emerald-100 text-xs sm:text-sm truncate">+94 77 296 5729</p>
                     </div>
                   </a>
                   

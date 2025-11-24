@@ -86,7 +86,7 @@ export const allPackages: Package[] = [
     duration: "3 DAYS 2 NIGHTS",
     price: "Negotiable",
     description: "Experience the Best of Both Worlds in Sri Lanka! Why choose between adventure and relaxation? Our program perfectly blends the two. Dive deep into the island's rich culture, uncover ancient heritage, and explore breathtaking natural wonders. After your adventure, escape to the coast for a blissful beach retreat. You’ll return home completely rejuvenated, filled with unforgettable memories.",
-    image: "/images/kandy-pinnawala-sigiriya-dambulla-13.jpg",
+    image: "/images/kandy-pinnawala-sigiriya-dambulla-13.webp",
     category: "Short Stays",
     highlights: ["Sigiriya Rock Fortress", "Dambulla Cave Temple", "Ayurveda Herbal Garden", "Temple of Tooth Relic", "Millennium Elephant Foundation ( Walk with an elephant )" ],
     itinerary: [
@@ -208,7 +208,7 @@ export const allPackages: Package[] = [
     duration: "3 DAYS 2 NIGHTS",
     price: "Negotiable",
     description: "Embark on the ultimate journey into Sri Lanka's heart, beginning with a magical encounter with elephant giants at Pinnawala before heading to Kandy, the island's vibrant cultural capital. From there, dive deep into the legendary Cultural Triangle: conquer the breathtaking Sigiriya Lion Rock fortress, explore the ancient, art-filled Dambulla Cave Temples, and awaken your senses in the fragrant spice gardens of Matale. After this incredible immersion into history and nature, you'll trade ancient wonders for ocean bliss, unwinding with a well-deserved beach stay on a golden shore, leaving you perfectly rejuvenated.",
-    image: "/images/download.jpeg",
+    image: "/images/download.webp",
     category: "Short Stays",
     highlights: ["Gem Museum", "Batik Factory", "Cultural Dance Show", "Temple of Tooth Relic", "Sigiriya Rock Fortress", "Dambulla Cave Temple", "Ayurveda Herbal Garden", "Millennium Elephant Foundation ( Walk with an elephant )" ],
     itinerary: [
@@ -323,7 +323,7 @@ export const allPackages: Package[] = [
     duration: "4 DAYS 3 NIGHTS",
     price: "Negotiable",
     description: "Experience the best of both worlds in Sri Lanka, from the vibrant energy of Colombo to the pure bliss of the coast. Your adventure begins with a heartwarming visit to the Pinnawala elephant gathering, before you journey deep into the island's historic heart. You’ll conquer the legendary Sigiriya Lion Rock, discover the ancient wonders of the Dambulla caves, and awaken your senses in the fragrant spice gardens of Matale. Next, ascend to the cultural capital, Kandy, to explore its sacred sites with a City Tour and wander the magnificent Peradeniya Botanical Gardens. Finally, after this incredible immersion in nature and heritage, you’ll escape to a golden beach stay for a well-deserved retreat, leaving you completely rejuvenated with unforgettable memories.",
-    image: "/images/caption.jpg",
+    image: "/images/caption.webp",
     category: "Short Stays",
     highlights: ["Colombo City Tour", "Millennium Elephant Foundation ( Walk with an elephant )", "Sigiriya Rock Fortress", "Ayurveda Herbal Garden", "Gem Museum", "Batik Factory", "Cultural Dance Show", "Temple of Tooth Relic", "Royal Botanical Garden",],
     itinerary: [
@@ -463,7 +463,7 @@ exclusions: [
     duration: "5 DAYS 4 NIGHTS",
     price: "Negotiable",
     description: "Celebrate your 5-star Sri Lankan honeymoon with the perfect blend of culture, misty highlands, and blissful beach relaxation. Your romantic journey begins in Kandy after a visit to the Pinnawala elephant orphanage, where you'll explore the Royal Botanical Gardens and sacred Temple of the Tooth Relic. Next, ascend into the tea-scented highlands of Nuwaraeliya, witnessing the Ramboda and Devon falls and touring a tea plantation by Gregory Lake. From the peaks, unwind on the golden coast of Bentota with a magical Madu River safari and a visit to a sea turtle hatchery. Your adventure concludes with a city tour in Colombo, all while enjoying 5-star accommodation, a personal guide, and a private car for a seamless romantic escape.",
-    image: "/images/Uga-Ulagalla.jpg",
+    image: "/images/Uga-Ulagalla.webp",
     category: "Honeymoon & Beach",
     highlights: [
   "Visit Pinnawala Elephant Orphanage",
@@ -647,7 +647,7 @@ exclusions: [
     duration: "5 DAYS 4 NIGHTS",
     price: "Negotiable",
     description: "Catch the \"Down South Vibes\" on this 5-day, 5-star Sri Lankan beach escape. Your journey begins in Hikkaduwa, featuring a fun cycling tour of the Galle Dutch Fort. Next, hop in a Tuk Tuk to Unawatuna for pure beach bliss and an awe-inspiring whale watching safari in Mirissa. Finally, trade the coast for the capital's buzz with a Colombo city and shopping tour, topped off with an exciting nightclub and pub visit. This all-inclusive package, with 5-star accommodation, meals, and a personal guide, is your perfect blend of sun-soaked adventure and vibrant city life.",
-    image: "/images/image.jpg",
+    image: "/images/image.webp",
     category: "Honeymoon & Beach",
     highlights: [
   "Galle Dutch Fort",
@@ -816,7 +816,7 @@ exclusions: [
     duration: "5 DAYS 4 NIGHTS",
     price: "Negotiable",
     description: "Experience the breathtaking diversity of Sri Lanka on a journey that takes you from bustling cities to misty peaks and wild jungles. Your adventure begins in the urban heart of COLOMBO and with a heartwarming visit to the PINNAWALA elephant gathering. Next, discover the island's cultural soul in sacred KANDY and the magnificent PERADENIYA gardens, before ascending into the cool, tea-scented highlands. You'll witness the cascading RAMBODA falls, explore the colonial charm of NUWARA ELIYA 'Little England' , and soak in the iconic, sweeping views from ELLA. Finally, your journey culminates in a thrilling safari adventure in YALA, searching for leopards and elephants in their natural habitat, leaving you with unforgettable memories of Sri Lanka's rich culture and untamed nature",
-    image: "/images/The-Best-Places-to-Visit-in-Sri-Lanka.jpg",
+    image: "/images/The-Best-Places-to-Visit-in-Sri-Lanka.webp",
     category: "Nature & Wildlife",
     highlights: ["Colombo City Tour", "Gem Museum", "Batik Factory", "Millennium Elephant Foundation ( Walk with an elephant", "Cultural Dance Show", "Temple of Tooth Relic","Royal Botanical Garden", "Ramboda Falls", "Tea Factory Visit", "Nuwara Eliya City Tour", "Ravana Falls", "Yala National Park Safari", "Galle Fort Visit",],
     itinerary: [
@@ -979,7 +979,7 @@ exclusions: [
     duration: "6 DAYS 5 NIGHTS",
     price: "Negotiable",
     description: "Experience the absolute best of Sri Lanka in one unforgettable grand tour, blending ancient history, misty highlands, and golden shores. Your adventure begins in the island's historic heart, conquering the Sigiriya Lion Rock, exploring the sacred Dambulla cave temples, and breathing in the fragrant spices of Matale. From there, discover the cultural soul of Kandy and the magnificent Peradeniya gardens, before ascending into the stunning, tea-covered hill country. You'll chase the cascading Ramboda waterfalls, relax in the cool colonial charm of Nuwara Eliya, and soak in the iconic views from Ella. Your journey then shifts to a thrilling safari in Yala National Park, followed by a walk through history on the Dutch-colonial ramparts of the Galle Fort. Finally, after this incredible immersion, you'll unwind with a well-deserved beach stay, leaving you perfectly rejuvenated with memories of a complete island paradise.",
-    image: "/images/places-in-kandy.jpg",
+    image: "/images/places-in-kandy.webp",
     category: "Grand Round Tours",
     highlights: [
   "Colombo City Tour",
@@ -1190,7 +1190,7 @@ exclusions: [
     duration: "7 DAYS 6 NIGHTS",
     price: "Negotiable",
     description: "This is the ultimate Sri Lankan saga, an epic journey from the cradle of its civilization to its sun-drenched shores. Your adventure begins in the island's ancient heart, exploring the sacred, sprawling cities of Anuradhapura and Polonnaruwa. From there, you'll conquer the legendary Sigiriya Lion Rock, discover the hidden art of the Dambulla caves, and awaken your senses in the fragrant spice gardens of Matale. Next, immerse yourself in Kandy's cultural heartbeat and the lush Peradeniya gardens, before ascending into the cool, misty, tea-covered highlands. Marvel at the cascading Ramboda falls, relax in the colonial charm of Nuwara Eliya, and soak in the breathtaking vistas from Ella. Your adventure then shifts to the wild, with a thrilling leopard safari in Yala, before you walk the historic, ocean-lapped ramparts of Galle. Finally, after this grand immersion in culture, nature, and heritage, your well-deserved beach stay awaits for pure rejuvenation and unforgettable memories..",
-    image: "/images/Sri-lanka.jpg",
+    image: "/images/Sri-lanka.webp",
     category: "Grand Round Tours",
     highlights: [
   "Colombo City Tour",
@@ -1427,7 +1427,7 @@ exclusions: [
     duration: "11 DAYS 10 NIGHTS",
     price: "Negotiable",
     description: "Experience the best of both worlds on this perfect Sri Lankan tour. Your adventure begins in the Cultural Triangle, exploring the sacred Dambulla caves and conquering Sigiriya Rock from your base in Habarana. Journey south through Matale's spice gardens to the cultural heart of Kandy, then ascend into the misty highlands. You'll see the cascading Ramboda falls, relax in the cool colonial charm of Nuwara Eliya, and soak in the iconic views from Ella. Finally, trade the mountains for golden sands with a blissful beach retreat in Bentota before your departure, leaving you completely rejuvenated.",
-    image: "\images\\best-tourist-locations-in-sri-lanka.jpg",
+    image: "\images\\best-tourist-locations-in-sri-lanka.webp",
     category: "Nature & Wildlife",
     highlights: [
   "Dambulla Cave Temple",
@@ -1683,7 +1683,7 @@ exclusions: [
     duration: "14 DAYS 13 NIGHTS",
     price: "Negotiable",
     description: "Embark on a unique Sri Lankan journey, blending ancient culture with pristine northern and eastern beaches. From Negombo, you'll climb Pidurangala and explore the sacred city of Anuradhapura from your Habarana base. Venture north through Iranamadu and Kilinochchi to discover the vibrant culture of Jaffna and the remote Delft Island. Your adventure culminates on the east coast in Trincomalee, where you'll visit the Girihandu Seya temple, snorkel at Pigeon Island, and end with a blissful beach relaxation, leaving you completely rejuvenated.",
-    image: "\\images\\trincomlee.jpg",
+    image: "\\images\\trincomlee.webp",
     category: "Grand Round Tours", 
    highlights: [
   "Pidurangala",

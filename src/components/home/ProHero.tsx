@@ -9,23 +9,23 @@ import { motion, AnimatePresence } from 'framer-motion';
 // --- 1. List of 5 placeholder images ---
 const backgroundImages = [
   {
-    src: '/images/thumb-1920-545829.jpg',
+    src: '/images/thumb-1920-545829.webp',
     alt: 'Lush green tea plantations in the hills of Sri Lanka under fog',
   },
   {
-    src: '/images/Sigiriya-Rock-Sri-Lanka.jpg',
+    src: '/images/Sigiriya-Rock-Sri-Lanka.webp',
     alt: 'Ancient Sigiriya rock fortress rising above the jungle',
   },
   {
-    src: '/images/bence-biczo-odpWSKMwql4-unsplash.jpg',
+    src: '/images/bence-biczo-odpWSKMwql4-unsplash.webp',
     alt: 'Golden beach with palm trees at sunset in Sri Lanka',
   },
   {
-    src: '/images/dalada maligawa.jpg',
+    src: '/images/daladamaligawa.webp',
     alt: 'The illuminated Temple of the Tooth in Kandy at night',
   },
   {
-    src: '/images/zoshua-colah-O0YmMPG56KI-unsplash.jpg',
+    src: '/images/zoshua-colah-O0YmMPG56KI-unsplash.webp',
     alt: 'The white lighthouse at Galle Fort against a blue sky',
   },
 ];

@@ -47,8 +47,8 @@ export default function Header() {
             <div className={`relative transition-all duration-500 ${isScrolled ? 'w-12 h-12' : 'w-14 h-14'}`}>
               <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-orange-500/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <img 
-                src="/icons/logo.png" 
-                alt="FlyUp Travel Logo" 
+                src="/icons/logo.webp"
+                alt="The FlyUp Travel Logo" 
                 className="relative w-full h-full object-contain drop-shadow-2xl group-hover:scale-110 transition-transform duration-500"
               />
             </div>

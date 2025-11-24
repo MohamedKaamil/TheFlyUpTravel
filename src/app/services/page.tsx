@@ -10,7 +10,7 @@ const mainServices = [
     description:
       'Find your perfect stay with ease. We handle local and international hotel reservations, offering everything from budget-friendly stays to luxury resorts. Enjoy special deals, seasonal offers, and detailed hotel descriptions with amenities and images.',
     icon: Home,
-    image: '/images/booking.jpg',
+    image: '/images/booking.webp',
     color: 'from-amber-500 to-orange-500',
     features: [
       'Local and international hotel reservations',
@@ -25,7 +25,7 @@ const mainServices = [
     description:
       'Travel comfortably across Sri Lanka and beyond with our private transport options. Choose from cars, vans, or buses with professional chauffeurs. We also arrange airport transfers and luxury vehicle experiences for seamless travel.',
     icon: Car,
-    image: 'images/transport.jpg',
+    image: 'images/transport.webp',
     color: 'from-emerald-500 to-teal-500',
     features: [
       'Private car / van / bus rentals',
@@ -40,7 +40,7 @@ const mainServices = [
     description:
       'Stay informed and inspired for your journey. Access our curated travel resources, including destination guides, travel blogs, local weather updates, currency information, and cultural highlights to enrich your travel experience.',
     icon: BookOpen,
-    image: 'images/resource.jpg',
+    image: 'images/resource.webp',
     color: 'from-blue-500 to-cyan-500',
     features: [
       'Destination guides',
@@ -70,7 +70,7 @@ export default function ServicesPage() {
       <section className="relative h-[60vh] md:h-[70vh] min-h-[400px] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0">
           <img
-            src="/images/service.jpg"
+            src="/images/service.webp"
             alt="An aerial view of the diverse Sri Lankan coastline"
             className="w-full h-full object-cover animate-slow-zoom"
           />

@@ -2,27 +2,6 @@
 
 import { Sparkles, MapPin, ShieldCheck, Mail, Linkedin, Heart, Award, Users } from 'lucide-react';
 
-const team = [
-  {
-    name: 'Naveen Perera',
-    role: 'Founder & Lead Guide',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-    bio: '15+ years of experience crafting unforgettable Sri Lankan adventures',
-  },
-  {
-    name: 'Anisha Silva',
-    role: 'Itinerary Specialist',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-    bio: 'Expert in curating personalized experiences for every traveler',
-  },
-  {
-    name: 'Ravi Fernando',
-    role: 'Cultural Expert',
-    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80',
-    bio: 'Deep knowledge of Sri Lankan history, culture, and hidden gems',
-  },
-];
-
 export default function AboutPage() {
   return (
     <div className="bg-white">
@@ -30,7 +9,7 @@ export default function AboutPage() {
       <section className="relative h-[85vh] sm:h-[60vh] min-h-[300px] sm:min-h-[400px] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0">
           <img
-            src="/images/merakist-RxOrX1iW15A-unsplash.jpg"
+            src="/images/merakist-RxOrX1iW15A-unsplash.webp"
             alt="A breathtaking view of a Sri Lankan tea plantation"
             className="w-full h-full object-cover animate-slow-zoom"
           />

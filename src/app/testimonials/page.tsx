@@ -49,27 +49,27 @@ const allTestimonials = [
 
 const travelerPhotos = [
   {
-    src: '/images/Scenic-train-to-Ella.jpg',
+    src: '/images/Scenic-train-to-Ella.webp',
     alt: 'Train journey through tea plantations',
     caption: 'Scenic train to Ella'
   },
   {
-    src: '/images/Whale-watching.jpg',
+    src: '/images/Whale-watching.webp',
     alt: 'Whale watching in Mirissa',
     caption: 'Whale watching'
   },
   {
-    src: '/images/Mirissa-beach.jpg',
+    src: '/images/mirissa.webp',
     alt: 'Beautiful Sri Lankan beach',
     caption: 'Mirissa beach bliss'
   },
   {
-    src: '/images/Wildlife-safari-elephant.jpg',
+    src: '/images/Wildlife-safari-elephant.webp',
     alt: 'Wildlife safari elephant',
     caption: 'Yala safari magic'
   },
   {
-    src: '/images/pigeon-island.jpg',
+    src: '/images/pigeon-island.webp',
     alt: 'pigeon island',
     caption: 'Magic of pigeon island'
   },
@@ -94,7 +94,7 @@ export default function TestimonialsPage() {
       <section className="relative h-[85vh] sm:h-[60vh] min-h-[300px] sm:min-h-[400px] flex items-center justify-center text-center text-white">
         <div className="absolute inset-0">
           <img
-            src="/images/testimonial.jpg"
+            src="/images/testimonial.webp"
             alt="A beautiful, serene Sri Lankan landscape"
             className="w-full h-full object-cover animate-slow-zoom"
           />

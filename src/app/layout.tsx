@@ -18,11 +18,19 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'Fly Up Travel Agency',
+  title: 'The Fly Up Travel',
   description: 'Experience the wonder of Sri Lanka with expert local guides.',
-  // Added favicon configuration here
   icons: {
-    icon: '/icons/favicon32.png',
+    // 1. Main icon for browser tabs and Google Search
+    icon: '/icons/logo.webp',
+    
+    // 2. Fallback for search engines / older browsers
+    shortcut: '/icons/logo.webp',
+    
+    // 3. Apple Devices (iPhone/iPad Home Screen)
+    // Note: iPhones prefer PNG. If you only have WebP, you can try this, 
+    // but a PNG is safer for Apple devices.
+    apple: '/icons/apple-touch-icon.png', 
   },
 };
 

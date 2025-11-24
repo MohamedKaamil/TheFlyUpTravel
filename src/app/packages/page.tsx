@@ -30,7 +30,7 @@ export default function PackagesPage() {
       <section className="relative h-[60vh] min-h-[400px] flex items-center justify-center text-center text-white overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1920&h=800&fit=crop"
+            src="/images/package-photo.webp"
             alt="Sri Lankan landscape"
             className="w-full h-full object-cover animate-slow-zoom"
           />

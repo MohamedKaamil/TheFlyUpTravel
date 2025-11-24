@@ -24,7 +24,7 @@ export default function ProIntro() {
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500 to-amber-500 rounded-xl blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500"></div>
           <div className="relative h-full">
             <img
-              src="/images/hendrik-cornelissen-jpTT_SAU034-unsplash.jpg"
+              src="/images/hendrik-cornelissen-jpTT_SAU034-unsplash1.webp"
               alt="nine arch bridge in Ella"
               className="w-full h-full object-cover rounded-xl shadow-2xl transition-all duration-700 group-hover:scale-105 group-hover:rotate-1"
             />

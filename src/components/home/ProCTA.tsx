@@ -9,7 +9,7 @@ export default function ProCTA() {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0 opacity-40">
         <img
-          src="https://images.unsplash.com/photo-1519046904884-53103b34b206?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80"
+          src="/images/photo-1519046904884-53103b34b206.webp"
           alt="Gentle waves on a Sri Lankan beach at sunset"
           className="w-full h-full object-cover animate-slow-zoom"
         />
