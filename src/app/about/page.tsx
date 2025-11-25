@@ -54,7 +54,7 @@ export default function AboutPage() {
             <div className="relative animate-fade-in-left">
               <div className="relative h-96 lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl group">
                 <img
-                  src="images/Ayubowan.jpg"
+                  src="images/Ayubowan.webp"
                   alt="Sri Lankan landscape"
                   className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:rotate-2"
                 />
