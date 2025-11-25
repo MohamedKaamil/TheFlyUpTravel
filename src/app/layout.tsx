@@ -8,24 +8,21 @@ import Footer from '@/components/layout/Footer';
 // Setup the fonts
 const manrope = Manrope({
   subsets: ['latin'],
-  variable: '--font-manrope', // CSS variable for body
+  variable: '--font-manrope',
 });
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
   weight: ['500', '700'],
-  variable: '--font-playfair', // CSS variable for headings
+  variable: '--font-playfair',
 });
 
 export const metadata: Metadata = {
-  // 1. Updates the blue link text in search results
   title: {
-    template: '%s | The FlyUp Travel', // Updated: "FlyUp" (no space)
-    default: 'The FlyUp Travel',       // Updated: Exact name you requested
+    template: '%s | The FlyUp Travel', 
+    default: 'The FlyUp Travel',
   },
   description: 'Experience the wonder of Sri Lanka with expert local guides.',
-  
-  // 2. IMPORTANT: Tells Google the official "Site Name" (text above the URL)
   applicationName: 'The FlyUp Travel',
   openGraph: {
     siteName: 'The FlyUp Travel',
@@ -33,7 +30,6 @@ export const metadata: Metadata = {
     title: 'The FlyUp Travel',
     description: 'Experience the wonder of Sri Lanka with expert local guides.',
   },
-
   icons: {
     icon: '/icons/logo.webp',
     shortcut: '/icons/logo.webp',
@@ -46,10 +42,25 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  // --- NEW: Structured Data for Google ---
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'The FlyUp Travel',
+    alternateName: ['FlyUp Travel', 'Fly Up Travel'], // Helps Google map variations to the right name
+    url: 'https://theflyuptravel.com',
+  };
+
   return (
     <html lang="en">
-      {/* Apply the font variables to the body */}
       <body className={`${manrope.variable} ${playfair.variable} font-sans flex flex-col min-h-screen bg-stone-50`}>
+        
+        {/* Inject the JSON-LD script for Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+
         <Header />
         <main className="grow">{children}</main>
         <Footer />
