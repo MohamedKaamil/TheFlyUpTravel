@@ -18,7 +18,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'The Fly Up Travel',
+  title: {
+    template: '%s | The Fly Up Travel',
+    default: 'The Fly Up Travel - Sri Lanka', // Default home page title
+  },
   description: 'Experience the wonder of Sri Lanka with expert local guides.',
   icons: {
     // 1. Main icon for browser tabs and Google Search
