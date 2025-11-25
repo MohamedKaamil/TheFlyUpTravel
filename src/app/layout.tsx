@@ -18,21 +18,25 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  // 1. Updates the blue link text in search results
   title: {
-    template: '%s | The Fly Up Travel',
-    default: 'The Fly Up Travel - Sri Lanka', // Default home page title
+    template: '%s | The FlyUp Travel', // Updated: "FlyUp" (no space)
+    default: 'The FlyUp Travel',       // Updated: Exact name you requested
   },
   description: 'Experience the wonder of Sri Lanka with expert local guides.',
+  
+  // 2. IMPORTANT: Tells Google the official "Site Name" (text above the URL)
+  applicationName: 'The FlyUp Travel',
+  openGraph: {
+    siteName: 'The FlyUp Travel',
+    type: 'website',
+    title: 'The FlyUp Travel',
+    description: 'Experience the wonder of Sri Lanka with expert local guides.',
+  },
+
   icons: {
-    // 1. Main icon for browser tabs and Google Search
     icon: '/icons/logo.webp',
-    
-    // 2. Fallback for search engines / older browsers
     shortcut: '/icons/logo.webp',
-    
-    // 3. Apple Devices (iPhone/iPad Home Screen)
-    // Note: iPhones prefer PNG. If you only have WebP, you can try this, 
-    // but a PNG is safer for Apple devices.
     apple: '/icons/apple-touch-icon.png', 
   },
 };
