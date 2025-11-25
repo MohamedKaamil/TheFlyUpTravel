@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     description: 'Experience the wonder of Sri Lanka with expert local guides.',
   },
   icons: {
-    icon: '/icons/logo.webp',
-    shortcut: '/icons/logo.webp',
+    icon: '/icons/logo.png',
+    shortcut: '/icons/logo.png',
     apple: '/icons/apple-touch-icon.png', 
   },
 };
