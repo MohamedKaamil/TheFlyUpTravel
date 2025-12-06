@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 
 import { Mail, Phone, MapPin, Facebook, Twitter, Instagram, Send, ArrowUp, Heart, Sparkles } from 'lucide-react';
 import { useState } from 'react';
@@ -187,8 +188,18 @@ export default function Footer() {
               <span className="block md:inline mt-1 md:mt-0">Crafted with care in Sri Lanka 🇱🇰</span>
             </p>
             <div className="flex gap-6 text-xs">
-              <a href="/privacy" className="text-stone-500 hover:text-amber-400 transition-colors">Privacy Policy</a>
-              <a href="/terms" className="text-stone-500 hover:text-amber-400 transition-colors">Terms of Service</a>
+              <Link 
+                href="/privacy-policy" 
+                className="text-stone-500 hover:text-amber-400 transition-colors"
+              >
+                Privacy Policy
+              </Link>
+              <Link 
+                href="/terms" 
+                className="text-stone-500 hover:text-amber-400 transition-colors"
+              >
+                Terms of Service
+              </Link>
             </div>
           </div>
         </div>
