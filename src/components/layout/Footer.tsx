@@ -187,16 +187,20 @@ export default function Footer() {
               <span className="hidden md:inline"> • </span>
               <span className="block md:inline mt-1 md:mt-0">Crafted with care in Sri Lanka 🇱🇰</span>
             </p>
-            <div className="flex gap-6 text-xs">
+            <div className="flex items-center text-xs text-stone-500">
               <Link 
                 href="/privacy-policy" 
-                className="text-stone-500 hover:text-amber-400 transition-colors"
+                className="hover:text-amber-400 transition-colors"
               >
                 Privacy Policy
               </Link>
+              
+              {/* The separator */}
+              <span className="mx-3 text-stone-400">•</span>
+              
               <Link 
                 href="/terms" 
-                className="text-stone-500 hover:text-amber-400 transition-colors"
+                className="hover:text-amber-400 transition-colors"
               >
                 Terms of Service
               </Link>
