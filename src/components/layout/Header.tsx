@@ -54,7 +54,7 @@ export default function Header() {
             </div>
             <div className="flex flex-col">
               <span className={`font-serif font-bold transition-all duration-300 ${isScrolled ? 'text-xl' : 'text-2xl'} ${isScrolled ? 'text-stone-800' : 'text-white'}`}>
-                FlyUp Travel
+                The FlyUp Travel
               </span>
               <span className={`text-xs font-medium tracking-wider transition-all duration-300 ${isScrolled ? 'text-amber-600' : 'text-amber-300'}`}>
                 Explore Sri Lanka

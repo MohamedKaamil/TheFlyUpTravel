@@ -69,7 +69,7 @@ export default function Footer() {
               className="group inline-block font-serif text-3xl font-bold text-white mb-4 hover:text-amber-400 transition-colors duration-300"
             >
               <span className="relative">
-                Fly Up
+                The Fly Up
                 <span className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-amber-500 to-orange-500 group-hover:w-full transition-all duration-500 rounded-full"></span>
               </span>
             </a>
@@ -174,7 +174,7 @@ export default function Footer() {
               </a>
             </div>
             <p className="text-xs text-stone-300 leading-relaxed">
-              Join our community and share your Sri Lankan adventures with #FlyUpSriLanka
+              Join our community and share your Sri Lankan adventures with #TheFlyUpSriLanka
             </p>
           </div>
         </div>
@@ -183,7 +183,7 @@ export default function Footer() {
         <div className="border-t border-emerald-800/50 pt-8 animate-fade-in" style={{animationDelay: '0.5s'}}>
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="font-sans text-stone-500 text-xs text-center md:text-left">
-              &copy; {new Date().getFullYear()} Fly Up Travel Agency. All rights reserved.
+              &copy; {new Date().getFullYear()} The FlyUp Travel Agency. All rights reserved.
               <span className="hidden md:inline"> • </span>
               <span className="block md:inline mt-1 md:mt-0">Crafted with care in Sri Lanka 🇱🇰</span>
             </p>
